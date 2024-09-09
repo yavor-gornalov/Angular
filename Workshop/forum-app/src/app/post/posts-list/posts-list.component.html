@@ -1,0 +1,18 @@
+<aside>
+    <div class="aside">
+        <h2 class="title">
+            Recent posts
+        </h2>
+        <ul>
+            <li *ngFor="let post of posts">
+                <div class="aside-theme">
+                    <a href="#">
+                        <h3>{{post?.themeId?.themeName}}</h3>
+                        <p>{{post?.userId?.username}}</p>
+                        <p><span>{{post?.created_at}}</span></p>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</aside>
