@@ -39,7 +39,7 @@ aside {
 .aside .aside-theme {
     margin: 1rem 0;
     padding: 0.5rem 0;
-    border-top: dashed 1px #999;
+    border-bottom: dashed 1px #999;
 }
 
 .aside h3 {

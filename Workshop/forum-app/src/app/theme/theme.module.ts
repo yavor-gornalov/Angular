@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ThemesListComponent } from './themes-list/themes-list.component';
+import { SharedModule } from "../shared/shared.module";
 
 
 
@@ -9,8 +10,9 @@ import { ThemesListComponent } from './themes-list/themes-list.component';
     ThemesListComponent
   ],
   imports: [
-    CommonModule
-  ],
+    CommonModule,
+    SharedModule
+],
   exports: [
     ThemesListComponent,
   ]
