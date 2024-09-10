@@ -8,11 +8,13 @@ import { CoreModule } from "./core/core.module";
 import { ThemeModule } from './theme/theme.module';
 import { UserModule } from './user/user.module';
 import { HomeComponent } from './home/home.component';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
