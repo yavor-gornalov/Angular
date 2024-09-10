@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CoreModule } from "./core/core.module";
 import { ThemeModule } from './theme/theme.module';
 import { PostModule } from './post/post.module';
+import { UserModule } from './user/user.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,9 @@ import { PostModule } from './post/post.module';
     HttpClientModule,
     CoreModule,
     ThemeModule,
-    PostModule
+    PostModule,
+    UserModule,
+    AppRoutingModule
 
 ],
   providers: [],

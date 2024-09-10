@@ -6,10 +6,10 @@
         <div class="mini-navbar">
             <ul>
                 <li>
-                    <a href="#" (click)="switchLoggedIn()" >{{loginBntText}}</a>
+                    <a routerLink="login">Login</a>
                 </li>
                 <li *ngIf="!isLoggedIn">
-                    <a href="#">Register</a>
+                    <a routerLink="/register">Register</a>
                 </li>
             </ul>
         </div>
