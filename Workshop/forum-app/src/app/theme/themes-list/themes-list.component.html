@@ -1,4 +1,6 @@
 <main>
+    <app-welcome />
+
     <app-loader *ngIf="isLoading" />
     <div *ngIf="!isLoading">
         <ul class="theme-title" *ngFor="let theme of themes">

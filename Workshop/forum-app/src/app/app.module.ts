@@ -7,19 +7,20 @@ import { HttpClientModule } from '@angular/common/http';
 import { CoreModule } from "./core/core.module";
 import { ThemeModule } from './theme/theme.module';
 import { UserModule } from './user/user.module';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './home/home/home.component';
 import { ErrorComponent } from './error/error.component';
+import { HomeModule } from './home/home.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     ErrorComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     CoreModule,
+    HomeModule,
     ThemeModule,
     UserModule,
     AppRoutingModule

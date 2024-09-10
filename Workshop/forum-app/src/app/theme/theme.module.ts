@@ -6,6 +6,7 @@ import { AddThemeComponent } from './add-theme/add-theme.component';
 import { AllThemesComponent } from './all-themes/all-themes.component';
 import { PostsListComponent } from './posts-list/posts-list.component';
 import { ThemeRoutingModule } from './theme-routing.module';
+import { CoreModule } from "../core/core.module";
 
 
 
@@ -19,7 +20,8 @@ import { ThemeRoutingModule } from './theme-routing.module';
   imports: [
     CommonModule,
     SharedModule,
-    ThemeRoutingModule
+    ThemeRoutingModule,
+    CoreModule
 ],
   exports: [
     ThemesListComponent,

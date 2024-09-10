@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UserService } from 'src/app/user/user.service';
 
 @Component({
   selector: 'app-header',
@@ -6,12 +7,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent {
-  public isLoggedIn = false;
-  public loginBntText = 'Login';
-  
-  switchLoggedIn() {
-    this.isLoggedIn = !this.isLoggedIn;
-    this.loginBntText = this.isLoggedIn? 'Logout' : 'Login';
+  private userService: UserService;
+
+  constructor(userService: UserService) {
+    this.userService = userService;
   }
 
+  get isLoggedIn(): boolean {
+    return this.userService.isLoggedIn;
+  }
+
+  get firstName(): string {
+    return this.userService.getUser?.username || '';
+  }
+
+  logout() {
+    this.userService.logout();
+  }
 }

@@ -5,14 +5,13 @@ import { RegisterComponent } from './register/register.component';
 import { DetailsComponent } from './details/details.component';
 
 const routes: Routes = [
-    { path: 'login', component: LoginComponent },
-    {path: 'register', component: RegisterComponent},
-    {path: 'details', component: DetailsComponent}
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'profile', component: DetailsComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class UserRoutingModule { 
-}
+export class UserRoutingModule {}
