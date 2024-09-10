@@ -6,20 +6,19 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CoreModule } from "./core/core.module";
 import { ThemeModule } from './theme/theme.module';
-import { PostModule } from './post/post.module';
 import { UserModule } from './user/user.module';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     HttpClientModule,
     CoreModule,
     ThemeModule,
-    PostModule,
     UserModule,
     AppRoutingModule
 
