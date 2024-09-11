@@ -12,9 +12,7 @@ export class UserService {
     try {
       const user = localStorage.getItem(this.USER_KEY) || '';
       this.user = JSON.parse(user);
-      console.log('Logged in!');
     } catch (error) {
-      console.log('Not logged in!');
       this.user = null;
     }
   }
